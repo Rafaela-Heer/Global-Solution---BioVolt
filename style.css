@@ -23,7 +23,7 @@ header {
 }
 .cabecalho nav{
     display: flex;
-    padding: 0px 200px;
+    padding: 0px 240px;
     gap: 70px;
     
 }
@@ -88,7 +88,7 @@ header {
 }
 .links_botao1{
     display: flex;
-    padding: 12px 17.716px 11.716px 46px;
+    padding: 10px 17px 10px 46px;
     align-items: flex-start;
     gap: 82px;
     align-self: stretch;
@@ -102,7 +102,7 @@ header {
 }
 .links_botao2{
     display: flex;
-    padding: 12px 17.716px 11.716px 46px;
+    padding: 10px 17px 10px 46px;
     align-items: flex-start;
     gap: 28px;
     align-self: stretch;
@@ -116,7 +116,7 @@ header {
 }
 .links_botao3{
     display: flex;
-    padding: 12px 17.716px 11.716px 46px;
+    padding: 10px 17px 10px 46px;
     align-items: flex-start;
     gap: 35px;
     align-self: stretch;
@@ -138,9 +138,9 @@ header {
     width: 364px;
     height: 225px;
 
-    border-radius: 10px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
 
     margin-left: 35%;
     align-items: center;

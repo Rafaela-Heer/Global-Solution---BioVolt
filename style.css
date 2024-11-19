@@ -9,6 +9,77 @@
 body {
     background: #06181C;
 }
+.imagem{
+    background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imagem img{
+    padding: 40%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.sessao_area_preencher{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.areas{
+    margin: 20px 0px;
+}
+.area_preencher{
+    text-align: center;
+    width: 40%;
+    
+}
+.area_preencher p{
+    font-family: montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.838);
+    font-size: 1rem;
+    font-weight: 300;
+
+    margin-bottom: 10px;
+}
+input[type=text]{
+    width: 100%;
+    height: 40px;
+
+    margin: 5px;
+
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+}
+input[type=text]::placeholder{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    padding-left: 32px;
+}
+.botao_enviar{
+    font-family: montserrat, sans-serif;
+    color: #06181C;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 500;
+
+    padding: 10px 47px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
 header {
     background-image: url(./IMAGES/BACKGROUND.cidade-home.png);
     height: 880px;

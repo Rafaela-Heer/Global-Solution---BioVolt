@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #06181C;
+}
+header {
+    background-image: url(./IMAGES/BACKGROUND.cidade-home.png);
+    height: 880px;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    padding: 1% 6%;
+}
+.cabecalho nav{
+    display: flex;
+    padding: 0px 200px;
+    gap: 70px;
+    
+}
+
+.menu_link {
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    padding-bottom: 7px;
+    
+}
+.menu_link:hover{
+    border-bottom: 2px solid white;
+}
+
+
+.link_entrar{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    display: inline-flex;
+    padding: 8px 44px;
+
+    border-radius: 25px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+}
+.link_entrar:hover{
+    transition-duration: 0.25s;
+    background: rgba(255, 255, 255, 0.2);
+}
+.frase{
+    text-align: center;
+    margin: 15% 0%;
+}
+.frase h1{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.frase h2{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.home_inferior{
+    display: flex;
+}
+.links{
+    display: inline-block;
+    margin: 1.5% 5%;
+    
+}
+.links_botao1{
+    display: flex;
+    padding: 12px 17.716px 11.716px 46px;
+    align-items: flex-start;
+    gap: 82px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+    
+    margin-bottom: 10px;
+}
+.links_botao2{
+    display: flex;
+    padding: 12px 17.716px 11.716px 46px;
+    align-items: flex-start;
+    gap: 28px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+
+    margin-bottom: 10px;
+}
+.links_botao3{
+    display: flex;
+    padding: 12px 17.716px 11.716px 46px;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
+
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(6px);
+}
+.links_texto{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-weight: 300;
+}
+.caixinha{
+    width: 364px;
+    height: 225px;
+
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+
+    margin-left: 35%;
+    align-items: center;
+    text-align: center;
+
+}
+.linha{
+    position: absolute;
+    top: 1px;
+    left: 83px;
+}
+.caixinha_conteudo{
+    padding-top: 25px;
+}
+.caixinha_conteudo p{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    padding-top: 33px;
+}

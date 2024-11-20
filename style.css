@@ -234,3 +234,119 @@ header {
 
     padding-top: 33px;
 }
+
+
+/* css carrossel aqui */
+
+
+.solucao-section {
+    font-family: Montserrat;
+    padding: 5rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.solucao-container {
+    background-image: url(./IMAGES/BACKGROUND.iluminado-solucaocomo.png);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    border-radius: 1.25rem;
+
+}
+
+.solucao-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.solucao-iconLamp-titulo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 90px 0px 0px 0px;
+}
+
+.solucao-iconLamp {
+    font-size: 2rem;
+}
+
+.solucao-header h2 {
+    font-size: 2.0rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #ffffff;
+}
+
+.solucao-texto {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.solucao-como {
+    font-size: 2.0rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.solucao-gaveta {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0px 0px 50px 0px;
+}
+
+.solucao-gaveta-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.solucao-gaveta-button {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.solucao-gaveta-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.solucao-seta {
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.solucao-gaveta-item.ativo .solucao-seta {
+    transform: rotate(180deg);
+}
+
+.solucao-gaveta-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #ffffff;
+}
+
+.solucao-gaveta-item.ativo .solucao-gaveta-content {
+    max-height: 500px;
+    padding: 1.5rem;
+}

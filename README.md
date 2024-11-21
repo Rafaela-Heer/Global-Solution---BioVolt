@@ -24,14 +24,14 @@ Este repositório contém o código do site desenvolvido para o projeto de siste
   - **Figma:** Utilizado para o design e prototipação das páginas, fornecendo a base para o design e o layout padronizados em todo o site.
 
    ## Estrutura das páginas
-   - **Home -** "cara do projeto" contêm o menu com todas as seções da página, facilitando o acesso;
+   - **Home -** "cara do projeto" contém o menu com todas as seções da página, facilitando o acesso;
    - **Sistema de Login -** Permite o acesso personalizado dos usuários ao site;
    - **Seção: "Problemas em Foco" -** Explora os principais desafios que motivaram o desenvolvimento do projeto, como: poluição em corpos d'água, descarte incorreto de resíduos orgânicos e emissões de gases nocivos;
    - **Seção: "Solução" -** Apresenta como o projeto resolveu os problemas citados;
    - **Seção: "Como" -** Explica o processo completo da solução através de um menu dropdown, com os seguintes tópicos:
-     - Coleta de Biomassa;
-     - Filtragem e Processamento;
-     - Geração de Energia;
+     - Coleta (de Biomassa);
+     - Energia(transformação);
+     - Destino(da energia após ser gerada);
      - Simulação: Ferramenta onde o usuário pode inserir a quantidade de biomassa que irá fornecer e receberá como resposta a quantidade de energia gerada e o potencial desconto na conta de luz;
 - **Seção: "Benefício do Diferencial" -** Lista as vantagens do projeto;
 - **Seção de Contato -** Disponibiliza um formulário para que usuários possam entrar em contato com a equipe do projeto.

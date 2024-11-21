@@ -9,6 +9,11 @@
 body {
     background: #06181C;
 }
+
+.pagina{
+    display: flex;
+    flex-direction: row;
+}
 .imagem{
     background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
 
@@ -44,7 +49,7 @@ body {
 
     margin-bottom: 10px;
 }
-input[type=texto]{
+input[type=text]{
     width: 100%;
     height: 40px;
 
@@ -55,7 +60,7 @@ input[type=texto]{
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
 }
-input[type=texto]::placeholder{
+input[type=text]::placeholder{
     color: #FFF;
     font-family: Montserrat;
     font-size: 0.8rem;
@@ -63,17 +68,19 @@ input[type=texto]::placeholder{
 
     padding-left: 32px;
 }
-.botao_enviar{
-    font-family: montserrat, sans-serif;
-    color: #06181C;
-    font-size: 1.25rem;
-    text-decoration: none;
-    font-weight: 500;
+button{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
 
-    padding: 10px 47px;
-    background-color: white;
     border-radius: 15px;
+    background: #ffffff;
+    border: 0px;  
 
+    color: #06181C;
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 header {
@@ -166,6 +173,10 @@ header {
     
     margin-bottom: 10px;
 }
+.links_botao1:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .links_botao2{
     display: flex;
     padding: 10px 17px 10px 46px;
@@ -180,6 +191,10 @@ header {
 
     margin-bottom: 10px;
 }
+.links_botao2:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .links_botao3{
     display: flex;
     padding: 10px 17px 10px 46px;
@@ -192,6 +207,10 @@ header {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(6px);
 }
+.links_botao3:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .links_texto{
     font-family: montserrat, sans-serif;
     color: white;
@@ -213,6 +232,10 @@ header {
     text-align: center;
 
 }
+.caixinha:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .linha{
     position: absolute;
     top: 1px;
@@ -230,8 +253,166 @@ header {
     padding-top: 33px;
 }
 
-/* css carrossel aqui */
+.carrossel_section{
+    display: flex;
+    justify-content: center;
 
+    margin-top: 3%;
+    height: 400px
+}
+.carrossel{
+    background-image: url(./IMAGES/BACKGROUND.oceano-carrossel.png);
+    width: 70%;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+.carrossel::-webkit-scrollbar{
+    width: 5px;   
+}
+.carrossel::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.carrossel_section_texto{
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(5px);
+
+    width: 60%;
+    height: 1000px;
+    margin: 25px;
+    
+}
+.carrossel_section_texto h1{
+    font-family: montserrat, sans-serif;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin: 40px 0px 0px 50px;
+}
+.texto1{
+    margin: 25px 50px;
+
+}
+.texto1 h2{
+    font-family: montserrat, sans-serif;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+}
+.texto1 p{
+    font-family: montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    margin-top: 10px;
+    
+}
+.texto2{
+    margin: 25px 50px;
+    padding: 90px 0px;
+
+}
+.texto2 h2{
+    font-family: montserrat, sans-serif;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+}
+.texto2 p{
+    font-family: montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    margin-top: 10px;
+    
+}.texto3{
+    margin: 25px 50px;
+
+}
+.texto3 h2{
+    font-family: montserrat, sans-serif;
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+}
+.texto3 p{
+    font-family: montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    margin-top: 10px;
+    
+}
+.carrossel_section_image{
+    height: 20%;
+}
+.imagens{
+    margin: 10% 0%;
+    width: 93%;
+}
+.imagem_energia{
+    padding: 5%;
+    border-radius: 15px;
+    background: #BBB;
+    margin-bottom: 5%;
+}
+.imagem_energia img{
+    width: 100%;
+}
+.imagem_energia p{
+    font-family: montserrat, sans-serif;
+    color: #06181C;
+    font-size: 1.2rem;
+    
+    padding-bottom: 10px;
+}
+
+.imagem_poluicao{
+    border-radius: 15px;
+    background: #BBB;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.imagem_poluicao img{
+    width: 100%;
+}
+.imagem_poluicao p{
+    font-family: montserrat, sans-serif;
+    color: #06181C;
+    font-size: 1.2rem;
+    
+    padding-bottom: 10px;
+}
+
+.imagem_gases{
+    border-radius: 15px;
+    background: #BBB;
+    padding: 5%;
+}
+.imagem_gases img{
+    width: 100%;
+}
+.imagem_gases p{
+    font-family: montserrat, sans-serif;
+    color: #06181C;
+    font-size: 1.2rem;
+    
+    padding-bottom: 10px;
+}
 
 .solucao-section {
     font-family: Montserrat;

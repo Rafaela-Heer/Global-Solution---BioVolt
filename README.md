@@ -1,6 +1,6 @@
 <h1 align="center">♻️BioVolt- Gerador de energia a partir de biomassa⚡</h1>
 
-## BioVolt - Energia limpa, rios vivos: juntos por um futuro sustentável.
+<h2 align="center"> BioVolt - Energia limpa, rios vivos: juntos por um futuro sustentável.</h2>
 <br>
 
 ## Projeto de site para empresa fictícia BioVolt - Global Solution

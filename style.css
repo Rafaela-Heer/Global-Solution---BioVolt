@@ -10,82 +10,10 @@ body {
     background: #06181C;
 }
 
-.pagina{
-    display: flex;
-    flex-direction: row;
-}
-.imagem{
-    background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
-
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.imagem img{
-    padding: 40%;
-}
-
-.sessao_area_preencher{
-    width: 50%;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.areas{
-    margin: 20px 0px;
-}
-.area_preencher{
-    text-align: center;
-    width: 40%;
-}
-.area_preencher p{
-    font-family: montserrat, sans-serif;
-    color: rgba(255, 255, 255, 0.838);
-    font-size: 1rem;
-    font-weight: 300;
-
-    margin-bottom: 10px;
-}
-input[type=text]{
-    width: 100%;
-    height: 40px;
-
-    margin: 5px;
-
-    border-radius: 15px;
-    border: 1px solid #FFF;
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(10px);
-}
-input[type=text]::placeholder{
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 0.8rem;
-    font-weight: 300;
-
-    padding-left: 32px;
-}
-button{
-    margin-top: 10px;
-    width: 120px;
-    height: 40px;
-
-    border-radius: 15px;
-    background: #ffffff;
-    border: 0px;  
-
-    color: #06181C;
-    font-family: montserrat, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
 header {
     background-image: url(./IMAGES/BACKGROUND.cidade-home.png);
-    height: 880px;
+    width: 100vw;
+    height: 100vh;
 }
 .cabecalho{
     display: flex;
@@ -138,7 +66,7 @@ header {
 }
 .frase{
     text-align: center;
-    margin: 15% 0%;
+    margin: 10% 0%;
 }
 .frase h1{
     font-family: montserrat, sans-serif;
@@ -263,6 +191,7 @@ header {
 .carrossel{
     background-image: url(./IMAGES/BACKGROUND.oceano-carrossel.png);
     width: 70%;
+    height: 400px;
     border-radius: 20px;
 
     display: flex;
@@ -285,8 +214,11 @@ header {
     backdrop-filter: blur(5px);
 
     width: 60%;
-    height: 1000px;
     margin: 25px;
+    
+    position: sticky;
+    top: 20px;
+    
     
 }
 .carrossel_section_texto h1{
@@ -319,7 +251,6 @@ header {
 }
 .texto2{
     margin: 25px 50px;
-    padding: 90px 0px;
 
 }
 .texto2 h2{
@@ -356,6 +287,47 @@ header {
 
     margin-top: 10px;
     
+}
+.textos{
+    position: relative;
+
+}
+
+.conteudo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.ativo{
+    z-index: 10;
+
+    opacity: 1;
+    visibility: visible;
+}
+.nav-dots{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    z-index: 30;
+}
+.nav-dot button{
+    width: 40px;
+    height: 2px;
+
+    cursor: pointer;
+    opacity: .6;
+
+}
+.dot-ativo button{
+    width: 100px;
+    opacity: 1;
 }
 .carrossel_section_image{
     height: 20%;
@@ -614,8 +586,122 @@ header {
 }
 
 
-/*contatos aqui*/
 
+.contatos_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contatos_caixa{
+    background-image: url(./IMAGES/BACKGROUND.mar-contato.png);
+    width: 60%;
+    border-radius: 20px;
+    margin-top: 3%;
+
+    display: flex;
+    flex-direction: row;
+}
+.contatos_caixa_texto{
+    width: 48%;
+    margin: 5% 0% 5% 5%;
+}
+.contatos_caixa_texto h1{
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    padding-bottom: 10%;
+}
+.contatos_caixa_texto p{
+    width: 80%;
+    font-family: montserrat, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+.contatos_caixa_preencher{
+    border-radius: 10px;
+    background: #BBB;
+    margin: 2% 0%;
+    width: 45%;
+}
+.contatos_caixa_preencher_conteudo{
+    margin: 10%;
+}
+.contatos_caixa_preencher_conteudo h1{
+    color: #06181C;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+input[type=text], input[type=email]{
+    border-radius: 37px;
+    background: rgba(6, 24, 28, 0.40);
+    border: 0px;
+
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+input[type=text]::placeholder{
+    color: #06181C;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+input[type=email]::placeholder{
+    color: #06181C;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+textarea{
+    border-radius: 22px;
+    background: rgba(6, 24, 28, 0.40);
+    border: 0px;
+
+    width: 100%;
+    height: 140px;
+}
+
+.areatexto{
+    margin-bottom: 15px;
+}
+textarea::placeholder{
+    color: #06181C;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    padding: 15px 30px;
+
+    
+}
+.botao_contatos{
+    width: 100%;
+    height: 40px;
+    border-radius: 37px;
+    background: #06181C;
+    border: 0px;
+
+    color: #FFF;
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+}
+
+.erro{
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #06181C;
+    font-family: Montserrat;
+    text-align: center;
+
+}
+.erro:empty{
+    padding: 0px;
+    background-color: transparent;
+    color: #FFF;
+}
 
 footer {
     font-family: Montserrat;

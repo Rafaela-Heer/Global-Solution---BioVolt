@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioVolt</title>
+    <title>BioVolt - Energia sustentável</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./IMAGES/folha-azul.png" type="image/png">
 </head>
@@ -27,15 +27,15 @@
         <div class="home_inferior">
             <div class="links">
                 <div class="links_botao1">
-                    <a href="#" class="links_texto">Problemas em Foco</a>
+                    <a href="#problemas" class="links_texto">Problemas em Foco</a>
                     <img src="./IMAGES/seta.png">
                 </div>
                 <div class="links_botao2">
-                    <a href="#" class="links_texto">Apresentação da Solução</a>
+                    <a href="#solucao" class="links_texto">Apresentação da Solução</a>
                     <img src="./IMAGES/seta.png">
                 </div>
                 <div class="links_botao3">
-                    <a href="#" class="links_texto">Benefícios do Diferencial</a>
+                    <a href="#diferencial" class="links_texto">Benefícios do Diferencial</a>
                     <img src="./IMAGES/seta.png">
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
 
@@ -55,21 +55,28 @@
     <main>
 
         <section class="carrossel_section">
-            <div class="carrossel">
+            <div class="carrossel" id="problemas">
                 <div class="carrossel_section_texto">
                     <h1>Problemas em foco:</h1>
-                    <div class="texto1">
-                        <h2>Energia</h2>
-                        <p>Fontes de energia limpa e sustentável tornaram-se uma busca essencial devido ao aumento da demanda energética global e ao esgotamento dos combustíveis fósseis, que comprometem a segurança energética e intensificam as mudanças climáticas. O uso excessivo desses recursos está diretamente ligado à emissão de gases de efeito estufa, agravando o aquecimento global.</p>
+                    <div class="textos">
+                        <div id="texto1" class="texto1 conteudo ativo" >
+                            <h2>Energia</h2>
+                            <p>Fontes de energia limpa e sustentável tornaram-se uma busca essencial devido ao aumento da demanda energética global e ao esgotamento dos combustíveis fósseis, que comprometem a segurança energética e intensificam as mudanças climáticas. O uso excessivo desses recursos está diretamente ligado à emissão de gases de efeito estufa, agravando o aquecimento global.</p>
+                        </div>
+                        <div id="texto2" class="texto2 conteudo">
+                            <h2>Poluição</h2>
+                            <p>A crescente poluição dos rios pelo descarte inadequado de resíduos, representa uma grave ameaça aos ecossistemas e comunidades. O acúmulo de resíduos nos leitos e margens dos rios reduz a capacidade de escoamento das águas, contribuindo diretamente para a ocorrência de enchentes em áreas urbanas e rurais, que causam prejuízos econômicos, sociais e ambientais significativos.</p>
+                        </div>
+                        <div id="texto3" class="texto3 conteudo">
+                            <h2>Emissão de gases nocivos</h2>
+                            <p>A elevada emissão de gases nocivos, como dióxido de carbono (CO₂) e outros poluentes atmosféricos, acelera as mudanças climáticas e prejudica a saúde humana e ambiental. A queima de recursos não renováveis está diretamente associada à emissão de gases de efeito estufa, como o dióxido de carbono (CO₂), que acelera o aquecimento global.</p>
+                        </div>
                     </div>
-                    <div class="texto2">
-                        <h2>Poluição</h2>
-                        <p>A crescente poluição dos rios pelo descarte inadequado de resíduos, representa uma grave ameaça aos ecossistemas e comunidades. O acúmulo de resíduos nos leitos e margens dos rios reduz a capacidade de escoamento das águas, contribuindo diretamente para a ocorrência de enchentes em áreas urbanas e rurais, que causam prejuízos econômicos, sociais e ambientais significativos.</p>
-                    </div>
-                    <div class="texto3">
-                        <h2>Emissão de gases nocivos</h2>
-                        <p>A elevada emissão de gases nocivos, como dióxido de carbono (CO₂) e outros poluentes atmosféricos, acelera as mudanças climáticas e prejudica a saúde humana e ambiental. A queima de recursos não renováveis está diretamente associada à emissão de gases de efeito estufa, como o dióxido de carbono (CO₂), que acelera o aquecimento global.</p>
-                    </div>
+                    <ul class="nav-dots" id="js-dots">
+                        <li id="dot-texto1" class="nav-dot dot-ativo"><button onclick="selecionar('texto1')"></button></li>
+                        <li id="dot-texto2" class="nav-dot"><button onclick="selecionar('texto2')"></button></li>
+                        <li id="dot-texto3" class="nav-dot"><button onclick="selecionar('texto3')"></button></li>
+                    </ul>
                 </div>
                 <div class="carrossel_section_image">
                     <div class="imagens">
@@ -92,7 +99,7 @@
 
 
         <section class="solucao-section">
-            <div class="solucao-container">
+            <div class="solucao-container" id="solucao">
                 <div class="solucao-header">
                     <div class="solucao-iconLamp-titulo">
                         <i class="solucao-iconLamp">
@@ -105,49 +112,49 @@
                     </p>
                     <h3 class="solucao-como">Como?</h3>
                 </div>
-                
+
                 <div class="solucao-gaveta">
                     <div class="solucao-gaveta-item">
                         <button class="solucao-gaveta-button">
                             Coleta
                             <span class="solucao-seta">
-                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">    
+                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
                             <p>Começa com a coleta dos resíduos de rios poluídos utilizando técnicas de extração mecânica e triagem manual para separar materiais orgânicos de materiais inorgânicos. Assim, serão secos e triturados para facilitar o processo.</p>
                         </div>
                     </div>
-                
+
                     <div class="solucao-gaveta-item">
                         <button class="solucao-gaveta-button">
                             Energia
                             <span class="solucao-seta">
-                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt=""> 
+                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
                             <p>Para transformar em energia os resíduos serão queimados em um gerador projetado para capturar o calor e gerar eletricidade.</p>
                         </div>
                     </div>
-                
+
                     <div class="solucao-gaveta-item">
                         <button class="solucao-gaveta-button">
                             Gases
                             <span class="solucao-seta">
-                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt=""> 
+                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
                             <p>O gerador contará com filtros que capturam gases nocivos antes que eles sejam liberados na atmosfera para garantir que o processo seja sustentável e que a energia gerada tenha um impacto ambiental mínimo.</p>
                         </div>
                     </div>
-                
+
                     <div class="solucao-gaveta-item">
                         <button class="solucao-gaveta-button">
                             Destino
                             <span class="solucao-seta">
-                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt=""> 
+                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
@@ -157,12 +164,12 @@
                                 - Agronegócio para propriedades que necessitam de energia para processos agrícolas.</p>
                         </div>
                     </div>
-        
+
                     <div class="solucao-gaveta-item">
                         <button class="solucao-gaveta-button">
                             Simulação
                             <span class="solucao-seta">
-                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt=""> 
+                                <img src="./IMAGES/ICON.seta-solucaocomo.png" alt="">
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
@@ -183,30 +190,30 @@
                 </div>
             </div>
         </section>
-        
+
 
         <section class="beneficios-section">
-            <div class="beneficios-container">
+            <div class="beneficios-container" id="diferencial">
                 <div class="beneficios-header">
                     <div class="logo">
                         <img src="./IMAGES/LOGO.BioVolt-beneficios.png" alt="BioVolt - Energia que Purifica, Futuro que Inspira" class="logo-img">
                     </div>
                     <h2 class="beneficios-titulo">Benefícios do Diferencial</h2>
                 </div>
-                        
+
                 <div class="beneficios-grid">
                     <div class="beneficio-card">
                         <p class="beneficio-texto">
                             Manutenção de energia de baixo custo após o investimento inicial. <br>Desenvolvimento de novas cadeias produtivas baseadas no lixo como recurso. <br>Reduz a dependência de combustíveis fósseis e contribui para a diversificação da matriz energética.
                         </p>
                     </div>
-                            
+
                     <div class="beneficio-card">
                         <p class="beneficio-texto">
                             Melhoria das condições ambientais e a disponibilização de energia limpa beneficiam diretamente as comunidades locais, promovendo qualidade de vida, saúde e oportunidades econômicas, como novos empregos relacionados ao manejo e processamento dos resíduos
                         </p>
                     </div>
-                        
+
                     <div class="beneficio-card">
                         <p class="beneficio-texto">
                             Redução do volume de lixo nos rios e da poluição em fluxos d'água e no ar. <br>Reutilização de resíduos como fonte de energia renovável. <br> Reduz o risco de obstruções nos cursos d'água, mitigando a ocorrência de enchentes em áreas urbanas e rurais.
@@ -216,10 +223,45 @@
             </div>
         </section>
 
-<!-- contatos aqui -->
+        <section class="contatos_section">
+            <div class="contatos_caixa">
+                <div class="contatos_caixa_texto">
+                    <h1>Venha fazer parte da <br>solução!</h1>
+                    <p>Faça parte da equipe!
+                        Entre em contato conosco e mande seu curriculo para descobrir em que área você pode começar na ajuda por um futuro sustentável e tecnológico</p>
+                </div>
+                <div class="contatos_caixa_preencher">
+                    <div class="contatos_caixa_preencher_conteudo">
+                        <h1>Entre em contato conosco</h1>
+                        <div  class="form">
+                            <div class="erro" id="erro"></div>
+                            <form onsubmit="enviar(event)">
+                                <div class="preencher">
+                                    <div class="area">
+                                        <input type="text" id="nome" name="nome" placeholder="Nome*">
+                                    </div>
+                                    <div class="area">
+                                        <input type="email" id="email" name="email" placeholder="E-mail*">
+                                    </div>
+                                    <div class="area">
+                                        <input type="text" id="numero" name="numero" placeholder="Número de telefone*">
+                                    </div>
+                                </div>
+                                <div class="areatexto">
+                                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem*"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="botao_contatos">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
- 
+
     <footer>
 
         <section class="biovolt-footer">
@@ -241,7 +283,7 @@
               </div>
             </div>
 
-        </section> 
+        </section>
     </footer>
     <script src="script.js"></script>
 </body>

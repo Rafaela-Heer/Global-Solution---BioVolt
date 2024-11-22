@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #06181C;
+}
+.pagina{
+    display: flex;
+    flex-direction: row;
+}
+.imagem{
+    background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imagem img{
+    padding: 40%;
+}
+
+.sessao_area_preencher{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.areas{
+    margin: 20px 0px;
+}
+.area_preencher{
+    text-align: center;
+    width: 40%;
+}
+.area_preencher p{
+    font-family: montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.838);
+    font-size: 1rem;
+    font-weight: 300;
+
+    margin-bottom: 10px;
+}
+input[type=text]{
+    width: 100%;
+    height: 40px;
+
+    margin: 5px;
+
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+}
+input[type=text]::placeholder{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    padding-left: 32px;
+}
+button{
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+
+    border-radius: 15px;
+    background: #ffffff;
+    border: 0px;  
+
+    color: #06181C;
+    font-family: montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}

@@ -19,8 +19,8 @@ Este repositório contém o código do site desenvolvido para o projeto de siste
 </div>
 
   - **HTML:** Estrutura das páginas;
-  - **CSS:** Estilizando e organizando a aparência das páginas de forma responsiva e acessível.
-  - **JavaScript:** Tornar funcionalidades do site interativas, dinâmicas e para cálculos de simulação real .
+  - **CSS:** Estilizando e organizando a aparência das páginas de forma responsiva e acessível;
+  - **JavaScript:** Tornar funcionalidades do site interativas, dinâmicas e para cálculos de simulação real;
   - **Figma:** Utilizado para o design e prototipação das páginas, fornecendo a base para o design e o layout padronizados em todo o site.
 
    ## Estrutura das páginas

@@ -364,19 +364,18 @@ img.logo-cabecalho {
     opacity: 1;
 }
 .carrossel_section_image{
-    height: 30%;
-    max-height: 40%;
+    height: 20%;
 }
 
 .imagens{
     margin: 10% 0%;
     width: 93%;
-    margin-bottom: 20%;
 }
 .imagem_energia{
     padding: 5%;
     border-radius: 15px;
     background: #BBB;
+    margin-bottom: 5%;
 }
 
 .imagem_energia img{
@@ -394,6 +393,7 @@ img.logo-cabecalho {
     border-radius: 15px;
     background: #BBB;
     padding: 5%;
+    margin-bottom: 5%;
 }
 .imagem_poluicao img{
     width: 100%;
@@ -410,6 +410,7 @@ img.logo-cabecalho {
     border-radius: 15px;
     background: #BBB;
     padding: 5%;
+    margin-bottom: 5%;
 }
 
 .imagem_gases img{

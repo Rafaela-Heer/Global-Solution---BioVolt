@@ -27,15 +27,15 @@
         <div class="home_inferior">
             <div class="links">
                 <div class="links_botao1">
-                    <a href="#" class="links_texto">Problemas em Foco</a>
+                    <a href="#problemas" class="links_texto">Problemas em Foco</a>
                     <img src="./IMAGES/seta.png">
                 </div>
                 <div class="links_botao2">
-                    <a href="#" class="links_texto">Apresentação da Solução</a>
+                    <a href="#solucao" class="links_texto">Apresentação da Solução</a>
                     <img src="./IMAGES/seta.png">
                 </div>
                 <div class="links_botao3">
-                    <a href="#" class="links_texto">Benefícios do Diferencial</a>
+                    <a href="#diferencial" class="links_texto">Benefícios do Diferencial</a>
                     <img src="./IMAGES/seta.png">
                 </div>
             </div>
@@ -55,30 +55,28 @@
     <main>
 
         <section class="carrossel_section">
-            <div class="carrossel">
+            <div class="carrossel" id="problemas">
                 <div class="carrossel_section_texto">
                     <h1>Problemas em foco:</h1>
                     <div class="textos">
-                        <div class="texto1">
+                        <div id="texto1" class="texto1 conteudo ativo" >
                             <h2>Energia</h2>
                             <p>Fontes de energia limpa e sustentável tornaram-se uma busca essencial devido ao aumento da demanda energética global e ao esgotamento dos combustíveis fósseis, que comprometem a segurança energética e intensificam as mudanças climáticas. O uso excessivo desses recursos está diretamente ligado à emissão de gases de efeito estufa, agravando o aquecimento global.</p>
                         </div>
-                        <div class="texto2">
+                        <div id="texto2" class="texto2 conteudo">
                             <h2>Poluição</h2>
                             <p>A crescente poluição dos rios pelo descarte inadequado de resíduos, representa uma grave ameaça aos ecossistemas e comunidades. O acúmulo de resíduos nos leitos e margens dos rios reduz a capacidade de escoamento das águas, contribuindo diretamente para a ocorrência de enchentes em áreas urbanas e rurais, que causam prejuízos econômicos, sociais e ambientais significativos.</p>
                         </div>
-                        <div class="texto3">
+                        <div id="texto3" class="texto3 conteudo">
                             <h2>Emissão de gases nocivos</h2>
                             <p>A elevada emissão de gases nocivos, como dióxido de carbono (CO₂) e outros poluentes atmosféricos, acelera as mudanças climáticas e prejudica a saúde humana e ambiental. A queima de recursos não renováveis está diretamente associada à emissão de gases de efeito estufa, como o dióxido de carbono (CO₂), que acelera o aquecimento global.</p>
                         </div>
                     </div>
-                    <div class="botao_navegacao">
-                        <ul class="nav-dots" id="js-dots">
-                            <li class="nav-dot"></li>
-                            <li class="nav-dot"></li>
-                            <li class="nav-dot"></li>
-                        </ul>
-                    </div>
+                    <ul class="nav-dots" id="js-dots">
+                        <li id="dot-texto1" class="nav-dot dot-ativo"><button onclick="selecionar('texto1')"></button></li>
+                        <li id="dot-texto2" class="nav-dot"><button onclick="selecionar('texto2')"></button></li>
+                        <li id="dot-texto3" class="nav-dot"><button onclick="selecionar('texto3')"></button></li>
+                    </ul>
                 </div>
                 <div class="carrossel_section_image">
                     <div class="imagens">
@@ -100,7 +98,7 @@
         </section>
 
         <section class="solucao-section">
-            <div class="solucao-container">
+            <div class="solucao-container" id="solucao">
                 <div class="solucao-header">
                     <div class="solucao-iconLamp-titulo">
                         <i class="solucao-iconLamp">
@@ -183,7 +181,7 @@
 
 
         <section class="beneficios-section">
-            <div class="beneficios-container">
+            <div class="beneficios-container" id="diferencial">
                 <div class="beneficios-header">
                     <div class="logo">
                         <img src="./IMAGES/LOGO.BioVolt-beneficios.png" alt="BioVolt - Energia que Purifica, Futuro que Inspira" class="logo-img">
@@ -241,7 +239,7 @@
                                     <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem*"></textarea>
                                 </div>
                                 <div>
-                                    <button type="submit">Enviar</button>
+                                    <button type="submit" class="botao_contatos">Enviar</button>
                                 </div>
                             </form>
                         </div>

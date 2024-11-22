@@ -62,3 +62,14 @@ function enviar(event){
     erro.style.color= '#ffffff'
 
 }
+function selecionar(id){
+    const elementos = document.querySelectorAll('.conteudo')
+    elementos.forEach((item) => item.classList.remove('ativo'))
+    const dots = document.querySelectorAll('.nav-dot')
+    dots.forEach((item) => item.classList.remove('dot-ativo'))
+    const dot = document.getElementById('dot-' + id)
+    console.log(dot)
+    const elemento = document.getElementById(id)
+    dot.classList.add('dot-ativo')
+    elemento.classList.add('ativo')
+}

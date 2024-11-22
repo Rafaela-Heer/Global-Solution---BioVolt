@@ -90,6 +90,7 @@
             </div>
         </section>
 
+
         <section class="solucao-section">
             <div class="solucao-container">
                 <div class="solucao-header">
@@ -165,7 +166,18 @@
                             </span>
                         </button>
                         <div class="solucao-gaveta-content">
-                            <p>Simule o seu desconto na conta de luz! <br> Insira o peso do material orgânico separado por você. <br> Com (?) de biomassa você estará gerando (?) de energia! O seu desconto total será de (R$?)!</p>
+                            <p>Simule o seu desconto na conta de luz! <br> Insira o peso do material orgânico separado por você. </p>
+                            <div>
+                                <label for="materia-organica"></label>
+                                <input type="number" id="materia-organica" placeholder="Insira o peso em kg" />
+                            </div>
+                        
+                            <div>
+                                <button id="calcular">Calcular</button>
+                            </div>
+                        
+                            <div id="resultado"></div>
+
                         </div>
                     </div>
                 </div>

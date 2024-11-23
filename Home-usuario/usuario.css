@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -31,7 +30,7 @@ img.logo-cabecalho {
 
 .cabecalho nav {
     display: flex;
-    padding: 0px 240px;
+    padding: 0px 150px;
     gap: 70px;
 }
 
@@ -57,20 +56,10 @@ img.logo-cabecalho {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
-
     display: inline-flex;
-    padding: 8px 44px;
-
-    border-radius: 25px;
-    border: 1px solid #FFF;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(6px);
+    padding: 8px 20px;
 }
 
-.link_entrar:hover{
-    transition-duration: 0.25s;
-    background: rgba(255, 255, 255, 0.2);
-}
 .frase{
     text-align: center;
     margin: 10% 0%;

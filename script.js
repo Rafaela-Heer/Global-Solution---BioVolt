@@ -1,5 +1,5 @@
 const login_admin = "usuario_admin";
-        const senha_admin = "senha_admin123";
+const senha_admin = "senha_admin123";
 
         function validarLogin(event) {
             event.preventDefault();

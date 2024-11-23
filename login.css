@@ -69,16 +69,14 @@ input[type=text]::placeholder{
 
     padding-left: 32px;
 }
-button{
-    margin-top: 10px;
-    width: 120px;
-    height: 40px;
-
-    border-radius: 15px;
-    background: #ffffff;
-    border: 0px;  
-
+a {
+    padding: 0.6875rem 1.9375rem 0.625rem 1.9375rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    background: #FFF;
     color: #06181C;
+    text-decoration: none;
     font-family: montserrat, sans-serif;
     font-size: 1rem;
     font-weight: 500;

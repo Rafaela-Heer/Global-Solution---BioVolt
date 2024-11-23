@@ -85,7 +85,9 @@ function enviar(event){
     erro.style.color= '#ffffff'
 
 }
+
 function selecionar(id) {
+    
     document.querySelectorAll('.conteudo').forEach(item => {
         item.classList.remove('ativo');
     });
@@ -96,7 +98,31 @@ function selecionar(id) {
 
     document.getElementById(id).classList.add('ativo');
     document.getElementById(`dot-${id}`).classList.add('dot-ativo');
-    
+
     const numeroId = id.replace('texto', '');
     document.getElementById(`imagem${numeroId}`).classList.add('ativo');
 }
+
+function autoCarrossel() {
+    const textos = ['texto1', 'texto2', 'texto3'];
+    let currentIndex = 0;
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % textos.length;
+        selecionar(textos[currentIndex]);
+    }, 4000);
+}
+
+window.addEventListener('load', () => {
+    autoCarrossel();
+});
+
+document.querySelectorAll('.nav-dot button').forEach(button => {
+    button.addEventListener('click', (e) => {
+       
+        e.stopPropagation();
+        
+        const id = e.target.parentElement.id.replace('dot-', '');
+        selecionar(id);
+    });
+});

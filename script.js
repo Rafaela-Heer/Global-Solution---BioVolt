@@ -1,3 +1,19 @@
+const login_admin = "usuario_admin";
+        const senha_admin = "senha_admin123";
+
+        function validarLogin(event) {
+            event.preventDefault();
+
+            const login = document.getElementById("Login").value;
+            const senha = document.getElementById("Senha").value;
+
+            if (login === login_admin && senha === senha_admin) {
+                alert("Logado com sucesso!");
+                window.location.href = "./Home-usuario/usuario.html";
+            } else {
+                alert("Senha errada, tente novamente.");
+            }
+        }
 
 // comentando as partes pra deixar separado, dps apagamos
 // soluçao/como

@@ -3,17 +3,18 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     background: #06181C;
 }
-.pagina{
+
+.pagina {
     display: flex;
     flex-direction: row;
 }
-.imagem{
+
+.imagem {
     background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
     height: 70vh;
     width: 40%;
@@ -21,57 +22,61 @@ body {
     align-items: center;
     justify-content: center;
 }
-.imagem img{
+
+.imagem img {
     width: 100%;
     padding: 40%;
     object-fit: cover;
 }
 
-.sessao_area_preencher{
+.sessao_area_preencher {
     width: 50%;
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.areas{
+
+.areas {
     margin: 20px 0px;
 }
-.area_preencher{
+
+.area_preencher {
     text-align: center;
     width: 40%;
 }
-.area_preencher p{
+
+.area_preencher p {
     font-family: montserrat, sans-serif;
     color: rgba(255, 255, 255, 0.838);
     font-size: 1rem;
     font-weight: 300;
-
     margin-bottom: 10px;
 }
 
-input[type=text]{
+input[type=text],
+input[type=password] {
     width: 100%;
     height: 40px;
-
     margin: 5px;
     margin-bottom: 20px;
-
     border-radius: 15px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
+    color: #FFF;
+    padding-left: 32px;
+    box-sizing: border-box;
 }
 
-input[type=text]::placeholder{
+input[type=text]::placeholder,
+input[type=password]::placeholder {
     color: #FFF;
     font-family: Montserrat;
     font-size: 0.8rem;
     font-weight: 300;
-
-    padding-left: 32px;
 }
+
 a {
     padding: 0.6875rem 1.9375rem 0.625rem 1.9375rem;
     justify-content: center;
@@ -83,4 +88,10 @@ a {
     font-family: montserrat, sans-serif;
     font-size: 1rem;
     font-weight: 500;
+    display: inline-block;
+}
+
+a:hover {
+    background: #f0f0f0;
+    cursor: pointer;
 }

@@ -15,14 +15,16 @@ body {
 }
 .imagem{
     background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
-
-    width: 50%;
+    height: 50vh;
+    width: 40%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 .imagem img{
+    width: 100%;
     padding: 40%;
+    object-fit: cover;
 }
 
 .sessao_area_preencher{

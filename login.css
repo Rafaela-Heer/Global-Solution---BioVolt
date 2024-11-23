@@ -15,7 +15,7 @@ body {
 }
 .imagem{
     background-image: url(./IMAGES/BACKGROUND.cidade-login.png);
-    height: 50vh;
+    height: 70vh;
     width: 40%;
     display: flex;
     align-items: center;

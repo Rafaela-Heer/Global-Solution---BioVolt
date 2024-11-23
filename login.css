@@ -50,17 +50,20 @@ body {
 
     margin-bottom: 10px;
 }
+
 input[type=text]{
     width: 100%;
     height: 40px;
 
     margin: 5px;
+    margin-bottom: 20px;
 
     border-radius: 15px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
 }
+
 input[type=text]::placeholder{
     color: #FFF;
     font-family: Montserrat;

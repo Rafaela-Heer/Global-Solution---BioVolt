@@ -1,28 +1,28 @@
 const login_admin = "usuario_admin";
 const senha_admin = "senha_admin123";
 
-        function validarLogin(event) {
-            event.preventDefault();
+function validarLogin(event) {
+    event.preventDefault();
 
-            const login = document.getElementById("Login").value;
-            const senha = document.getElementById("Senha").value;
+    const login = document.getElementById("Login").value;
+    const senha = document.getElementById("Senha").value;
 
-            if (login === login_admin && senha === senha_admin) {
-                alert("Logado com sucesso!");
-                window.location.href = "./Home-usuario/usuario.html";
-            } else {
-                alert("Senha errada, tente novamente.");
-            }
-        }
+    if (login === login_admin && senha === senha_admin) {
+        alert("Logado com sucesso!");
+        window.location.href = "./Home-usuario/usuario.html";
+    } else {
+        alert("Senha errada, tente novamente.");
+    }
+}
 
 // comentando as partes pra deixar separado, dps apagamos
 // soluçao/como
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const gavetaItems = document.querySelectorAll('.solucao-gaveta-item');
 
     gavetaItems.forEach(item => {
         const button = item.querySelector('.solucao-gaveta-button');
-        
+
         button.addEventListener('click', () => {
             // verifica se o item clicado já ta ativo
             const isActive = item.classList.contains('ativo');
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.getElementById("calcular").addEventListener("click", function() {
-    
+document.getElementById("calcular").addEventListener("click", function () {
+
     const materia_organica = parseFloat(document.getElementById("materia-organica").value);
     const resultado = document.getElementById("resultado");
 
@@ -57,7 +57,7 @@ document.getElementById("calcular").addEventListener("click", function() {
     const percentual_desconto = 0.5
 
 
-   
+
     if (materia_organica > 0) {
         const energia_obtida = materia_organica * energia_por_kg * eficiencia;
         const valor_gerado = tarifa_sp * energia_obtida;
@@ -70,7 +70,7 @@ document.getElementById("calcular").addEventListener("click", function() {
 });
 
 //Contatos
-function enviar(event){
+function enviar(event) {
     event.preventDefault();
     var nome = document.querySelector('#nome').value
     var email = document.querySelector('#email').value
@@ -78,36 +78,37 @@ function enviar(event){
     var mensagem = document.querySelector('#mensagem').value
     var erro = document.querySelector('#erro')
 
-    if(
+    if (
         (nome.length < 2)
-        
-    ){  erro.textContent = 'O nome precisa ter mais de 2 letras, preencha todos os campos.'
+
+    ) {
+        erro.textContent = 'O nome precisa ter mais de 2 letras, preencha todos os campos.'
         return
     }
-    if(email.length == 0){
+    if (email.length == 0) {
         erro.textContent = 'Preencha todos os campos.'
         return
     }
-    if(numero.length == 0){
+    if (numero.length == 0) {
         erro.textContent = 'Preencha todos os campos.'
         return
     }
-    if(mensagem.length == 0){
+    if (mensagem.length == 0) {
         erro.textContent = 'Preencha todos os campos.'
         return
     }
-    erro.style.background='#06181C'
+    erro.style.background = '#06181C'
     erro.textContent = 'Mensagem enviada com sucesso!'
-    erro.style.color= '#ffffff'
+    erro.style.color = '#ffffff'
 
 }
 
 function selecionar(id) {
-    
+
     document.querySelectorAll('.conteudo').forEach(item => {
         item.classList.remove('ativo');
     });
-    
+
     document.querySelectorAll('.nav-dot').forEach(dot => {
         dot.classList.remove('dot-ativo');
     });
@@ -135,9 +136,9 @@ window.addEventListener('load', () => {
 
 document.querySelectorAll('.nav-dot button').forEach(button => {
     button.addEventListener('click', (e) => {
-       
+
         e.stopPropagation();
-        
+
         const id = e.target.parentElement.id.replace('dot-', '');
         selecionar(id);
     });

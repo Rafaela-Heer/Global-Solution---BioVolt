@@ -39,8 +39,15 @@ Este repositório contém o código do site desenvolvido para o projeto de siste
 ## Figma
 https://www.figma.com/design/hnCsLNyRLhfvrwIruOGrqY/Global-Solution---BioVolt?node-id=0-1&m=dev
 
+## Simulação Gerador
+https://github.com/Rafaela-Heer/Edge-BioVolt-Global.Solution.git
+
+## Python - Sistema de Cadastro de Candidatos
+https://github.com/Rafaela-Heer/Python-BioVolt-Global.Solution.git
+
 ## Colaboradores do projeto:
 - **Rafaela Heer Robinson** - RM560249
-- **Julia Hadja Kfouri Nunes** - RM559410
 - **Lucas Alves Piereti** - RM559533
+- **Julia Hadja Kfouri Nunes** - RM559410
+
 
